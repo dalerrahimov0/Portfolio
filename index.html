@@ -5,13 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daler Rahimov | Data Analyst & AI Specialist</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e3a8a', // Deep blue
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body class="bg-white text-gray-800 font-sans leading-relaxed tracking-wide flex flex-col">
 
   <!-- Navbar -->
   <nav class="bg-gray-100 p-4 shadow">
     <div class="container mx-auto flex justify-between">
-      <h1 class="text-xl font-bold">Daler Rahimov</h1>
+      <h1 class="text-xl font-bold text-primary">Daler Rahimov</h1>
       <div class="space-x-4">
         <a href="#about" class="hover:underline">About</a>
         <a href="#projects" class="hover:underline">Projects</a>
@@ -23,35 +34,34 @@
 
   <!-- Hero -->
   <section class="text-center py-20 bg-blue-50" id="home">
-    <h2 class="text-4xl font-bold mb-4">Data Analyst & AI Specialist</h2>
+    <h2 class="text-4xl font-bold mb-4 text-primary">Data Analyst & AI Specialist</h2>
     <p class="text-lg max-w-xl mx-auto">Transforming data into insights. Specializing in predictive analytics, AI tools, and automation.</p>
   </section>
 
   <!-- About -->
-<section class="container mx-auto py-12 px-4" id="about">
-  <h3 class="text-2xl font-semibold mb-4">About Me</h3>
-  <p class="text-gray-700 mb-4">
-    I’m a data analyst and AI enthusiast originally from Tajikistan — a small, mountainous country in Central Asia. Growing up in a place where access to advanced technology was limited only fueled my curiosity. I’ve always been fascinated by how things work — from the cosmos to computers — and that early passion led me to pursue a future in data, artificial intelligence, and systems design.
-  </p>
-  <p class="text-gray-700 mb-4">
-    Achieving my dream of studying in the United States, I earned my degree from the University of Nebraska at Kearney, where I focused on data analytics and machine learning. During that time, I built real-world tools — including a predictive model for healthcare billing and an AI-powered chatbot that integrates document ingestion, OpenAI GPT, and vector search for dynamic, role-based support.
-  </p>
-  <p class="text-gray-700 mb-4">
-    I currently serve as a Graduate Assistant for the Office of Graduate Studies and Academic Innovation at UNK. In this role, I support academic program development, collect and analyze student success data, assist in graduate marketing efforts, and help enhance institutional effectiveness through data-driven reporting.
-  </p>
-  <p class="text-gray-700">
-    I’m passionate about using technology to make systems smarter and more human-centered. Whether it’s solving technical problems or making complex processes more accessible, I aim to be part of the next generation shaping how data and AI are used to improve everyday life.
-  </p>
-</section>
-
+  <section class="container mx-auto py-12 px-4" id="about">
+    <h3 class="text-2xl font-semibold mb-4 text-primary">About Me</h3>
+    <p class="text-gray-700 mb-4">
+      I’m a data analyst and AI enthusiast originally from Tajikistan — a small, mountainous country in Central Asia. Growing up in a place where access to advanced technology was limited only fueled my curiosity. I’ve always been fascinated by how things work — from the cosmos to computers — and that early passion led me to pursue a future in data, artificial intelligence, and systems design.
+    </p>
+    <p class="text-gray-700 mb-4">
+      Achieving my dream of studying in the United States, I earned my degree from the University of Nebraska at Kearney, where I focused on data analytics and machine learning. During that time, I built real-world tools — including a predictive model for healthcare billing and an AI-powered chatbot that integrates document ingestion, OpenAI GPT, and vector search for dynamic, role-based support.
+    </p>
+    <p class="text-gray-700 mb-4">
+      I currently serve as a Graduate Assistant for the Office of Graduate Studies and Academic Innovation at UNK. In this role, I support academic program development, collect and analyze student success data, assist in graduate marketing efforts, and help enhance institutional effectiveness through data-driven reporting.
+    </p>
+    <p class="text-gray-700">
+      I’m passionate about using technology to make systems smarter and more human-centered. Whether it’s solving technical problems or making complex processes more accessible, I aim to be part of the next generation shaping how data and AI are used to improve everyday life.
+    </p>
+  </section>
 
   <!-- Projects -->
   <section class="container mx-auto py-12 px-4" id="projects">
-    <h3 class="text-2xl font-semibold mb-4">Projects</h3>
+    <h3 class="text-2xl font-semibold mb-4 text-primary">Projects</h3>
     <div class="space-y-8">
       <!-- UNK AI Chatbot -->
       <div>
-        <h4 class="text-xl font-bold mb-1">UNK AI Chatbot (Capstone Project)</h4>
+        <h4 class="text-xl font-bold mb-1 text-primary">UNK AI Chatbot (Capstone Project)</h4>
         <p class="text-gray-700 mb-2"><strong>Tech Stack:</strong> Python, Flask, WebSockets, React, Tailwind CSS, MongoDB, Pinecone, OpenAI API</p>
         <p class="text-gray-700 mb-2">
           A full-stack conversational AI assistant designed to provide instant, accurate answers from the University of Nebraska at Kearney (UNK) website.
@@ -69,7 +79,7 @@
 
       <!-- Predictive Analytics Placeholder -->
       <div>
-        <h4 class="text-xl font-bold mb-1">Predictive Analytics Tool – Coming Soon</h4>
+        <h4 class="text-xl font-bold mb-1 text-primary">Predictive Analytics Tool – Coming Soon</h4>
         <p class="text-gray-700">Description and details will be added shortly.</p>
       </div>
     </div>
@@ -77,19 +87,29 @@
 
   <!-- Resume -->
   <section class="container mx-auto py-12 px-4" id="resume">
-    <h3 class="text-2xl font-semibold mb-4">Resume</h3>
+    <h3 class="text-2xl font-semibold mb-4 text-primary">Resume</h3>
     <p>Download my resume below:</p>
-    <a href="resume.pdf" target="_blank" class="text-blue-600 underline">Download Resume (PDF)</a>
+    <a href="resume.pdf" target="_blank" class="text-blue-700 underline">Download Resume (PDF)</a>
   </section>
-  
-  <!-- Contact -->
-<section class="container mx-auto py-12 px-4" id="contact">
-  <h3 class="text-2xl font-semibold mb-4">Contact</h3>
-  <p>Email (UNK): <a href="mailto:rahimovd@lopers.unk.edu" class="text-blue-600">rahimovd@lopers.unk.edu</a></p>
-  <p>Email (Personal): <a href="mailto:drahimov04@gmail.com" class="text-blue-600">drahimov04@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/daler-rahimov-002970264/" class="text-blue-600">linkedin.com/in/daler-rahimov</a></p>
-</section>
 
+  <!-- Contact -->
+  <section class="container mx-auto py-12 px-4 bg-blue-50" id="contact">
+    <h3 class="text-2xl font-semibold mb-4 text-primary">Contact</h3>
+    <div class="space-y-3 text-gray-700">
+      <p>
+        📧 <strong>Email (UNK):</strong>
+        <a href="mailto:rahimovd@lopers.unk.edu" class="text-blue-700 hover:underline">rahimovd@lopers.unk.edu</a>
+      </p>
+      <p>
+        📩 <strong>Email (Personal):</strong>
+        <a href="mailto:drahimov04@gmail.com" class="text-blue-700 hover:underline">drahimov04@gmail.com</a>
+      </p>
+      <p>
+        🔗 <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/daler-rahimov-002970264/" class="text-blue-700 hover:underline">linkedin.com/in/daler-rahimov</a>
+      </p>
+    </div>
+  </section>
 
   <footer class="text-center text-sm text-gray-500 py-6">
     © 2025 Daler Rahimov. All rights reserved.
