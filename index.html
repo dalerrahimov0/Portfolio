@@ -10,110 +10,88 @@
       theme: {
         extend: {
           colors: {
-            primary: '#1e3a8a', // Deep blue
+            primary: '#1e3a8a',
+            dark: '#0f172a',
+            accent: '#38bdf8',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
           }
         }
       }
     }
   </script>
 </head>
-<body class="bg-white text-gray-800 font-sans leading-relaxed tracking-wide flex flex-col">
+<body class="bg-dark text-white font-sans">
 
-  <!-- Navbar -->
-  <nav class="bg-gray-100 p-4 shadow">
-    <div class="container mx-auto flex justify-between">
-      <h1 class="text-xl font-bold text-primary">Daler Rahimov</h1>
-      <div class="space-x-4">
-        <a href="#about" class="hover:underline">About</a>
-        <a href="#projects" class="hover:underline">Projects</a>
-        <a href="#resume" class="hover:underline">Resume</a>
-        <a href="#contact" class="hover:underline">Contact</a>
-      </div>
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center flex-col text-center px-6">
+    <img src="/profile.jpg" alt="Daler Rahimov" class="w-32 h-32 rounded-full mb-4 border-4 border-accent" />
+    <h1 class="text-4xl md:text-5xl font-bold mb-2">Hello, I'm <span class="text-accent">Daler Rahimov</span></h1>
+    <h2 class="text-xl md:text-2xl mb-6">Data Analyst & AI Specialist</h2>
+    <div class="space-x-4">
+      <a href="#projects" class="bg-accent text-dark font-semibold px-6 py-2 rounded shadow hover:brightness-110">View Projects</a>
+      <a href="resume.pdf" class="border border-accent px-6 py-2 rounded hover:bg-accent hover:text-dark transition">My Resume</a>
     </div>
-  </nav>
-
-  <!-- Hero -->
-  <section class="text-center py-20 bg-blue-50" id="home">
-    <h2 class="text-4xl font-bold mb-4 text-primary">Data Analyst & AI Specialist</h2>
-    <p class="text-lg max-w-xl mx-auto">Transforming data into insights. Specializing in predictive analytics, AI tools, and automation.</p>
   </section>
 
-  <!-- About -->
-  <section class="container mx-auto py-12 px-4" id="about">
-    <h3 class="text-2xl font-semibold mb-4 text-primary">About Me</h3>
-    <p class="text-gray-700 mb-4">
+  <!-- About Section -->
+  <section class="max-w-4xl mx-auto px-6 py-16" id="about">
+    <h3 class="text-3xl font-semibold text-accent mb-6">About Me</h3>
+    <p class="mb-4 text-lg">
       I’m a data analyst and AI enthusiast originally from Tajikistan — a small, mountainous country in Central Asia. Growing up in a place where access to advanced technology was limited only fueled my curiosity. I’ve always been fascinated by how things work — from the cosmos to computers — and that early passion led me to pursue a future in data, artificial intelligence, and systems design.
     </p>
-    <p class="text-gray-700 mb-4">
-      Achieving my dream of studying in the United States, I earned my degree from the University of Nebraska at Kearney, where I focused on data analytics and machine learning. During that time, I built real-world tools — including a predictive model for healthcare billing and an AI-powered chatbot that integrates document ingestion, OpenAI GPT, and vector search for dynamic, role-based support.
+    <p class="mb-4 text-lg">
+      Achieving my dream of studying in the United States, I earned my degree from the University of Nebraska at Kearney. During that time, I built real-world tools — including a predictive model for healthcare billing and an AI-powered chatbot that integrates document ingestion, OpenAI GPT, and vector search.
     </p>
-    <p class="text-gray-700 mb-4">
-      I currently serve as a Graduate Assistant for the Office of Graduate Studies and Academic Innovation at UNK. In this role, I support academic program development, collect and analyze student success data, assist in graduate marketing efforts, and help enhance institutional effectiveness through data-driven reporting.
+    <p class="mb-4 text-lg">
+      I currently serve as a Graduate Assistant for the Office of Graduate Studies and Academic Innovation at UNK. In this role, I support academic program development, analyze student success data, assist in marketing efforts, and help enhance institutional effectiveness through data-driven reporting.
     </p>
-    <p class="text-gray-700">
-      I’m passionate about using technology to make systems smarter and more human-centered. Whether it’s solving technical problems or making complex processes more accessible, I aim to be part of the next generation shaping how data and AI are used to improve everyday life.
+    <p class="text-lg">
+      I’m passionate about using technology to make systems smarter and more human-centered. My goal is to build tools that solve real problems and improve lives.
     </p>
   </section>
 
-  <!-- Projects -->
-  <section class="container mx-auto py-12 px-4" id="projects">
-    <h3 class="text-2xl font-semibold mb-4 text-primary">Projects</h3>
-    <div class="space-y-8">
-      <!-- UNK AI Chatbot -->
-      <div>
-        <h4 class="text-xl font-bold mb-1 text-primary">UNK AI Chatbot (Capstone Project)</h4>
-        <p class="text-gray-700 mb-2"><strong>Tech Stack:</strong> Python, Flask, WebSockets, React, Tailwind CSS, MongoDB, Pinecone, OpenAI API</p>
-        <p class="text-gray-700 mb-2">
-          A full-stack conversational AI assistant designed to provide instant, accurate answers from the University of Nebraska at Kearney (UNK) website.
-        </p>
-        <ul class="list-disc list-inside text-gray-700 mb-2">
-          <li><strong>Document Ingestion:</strong> Crawls and parses data from the UNK site into a searchable format.</li>
-          <li><strong>Vector Search:</strong> Uses Pinecone to enable semantic, context-aware query matching.</li>
-          <li><strong>Real-Time Chat:</strong> Supports live group messaging with WebSocket integration.</li>
-          <li><strong>Role-Based Access:</strong> Different UIs and permissions for staff vs. students.</li>
-          <li><strong>Modern UI:</strong> Responsive frontend with markdown rendering and clean design.</li>
-          <li><strong>Smart AI Layer:</strong> OpenAI GPT used to generate relevant, conversational responses.</li>
-        </ul>
-        <p class="text-blue-600"><a href="#" class="underline">GitHub Repository (Coming Soon)</a></p>
-      </div>
-
-      <!-- Predictive Analytics Placeholder -->
-      <div>
-        <h4 class="text-xl font-bold mb-1 text-primary">Predictive Analytics Tool – Coming Soon</h4>
-        <p class="text-gray-700">Description and details will be added shortly.</p>
+  <!-- Projects Section -->
+  <section class="bg-gray-900 px-6 py-16" id="projects">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-semibold text-accent mb-6">Projects</h3>
+      <div class="space-y-10">
+        <!-- UNK AI Chatbot -->
+        <div>
+          <h4 class="text-xl font-bold text-white">UNK AI Chatbot (Capstone Project)</h4>
+          <p class="text-gray-300 mb-2">Tech Stack: Python, Flask, WebSockets, React, Tailwind, MongoDB, Pinecone, OpenAI</p>
+          <ul class="list-disc list-inside text-gray-400">
+            <li>Document ingestion + vector search with Pinecone</li>
+            <li>Real-time chat with WebSocket backend</li>
+            <li>Role-based access for staff/students</li>
+            <li>Clean React frontend with markdown rendering</li>
+            <li>OpenAI GPT-powered natural language responses</li>
+          </ul>
+        </div>
+        <!-- Placeholder -->
+        <div>
+          <h4 class="text-xl font-bold text-white">Medical Billing Predictor – Coming Soon</h4>
+          <p class="text-gray-300">Details will be added shortly.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Resume -->
-  <section class="container mx-auto py-12 px-4" id="resume">
-    <h3 class="text-2xl font-semibold mb-4 text-primary">Resume</h3>
-    <p>Download my resume below:</p>
-    <a href="resume.pdf" target="_blank" class="text-blue-700 underline">Download Resume (PDF)</a>
-  </section>
-
-  <!-- Contact -->
-  <section class="container mx-auto py-12 px-4 bg-blue-50" id="contact">
-    <h3 class="text-2xl font-semibold mb-4 text-primary">Contact</h3>
-    <div class="space-y-3 text-gray-700">
-      <p>
-        📧 <strong>Email (UNK):</strong>
-        <a href="mailto:rahimovd@lopers.unk.edu" class="text-blue-700 hover:underline">rahimovd@lopers.unk.edu</a>
-      </p>
-      <p>
-        📩 <strong>Email (Personal):</strong>
-        <a href="mailto:drahimov04@gmail.com" class="text-blue-700 hover:underline">drahimov04@gmail.com</a>
-      </p>
-      <p>
-        🔗 <strong>LinkedIn:</strong>
-        <a href="https://www.linkedin.com/in/daler-rahimov-002970264/" class="text-blue-700 hover:underline">linkedin.com/in/daler-rahimov</a>
-      </p>
+  <!-- Contact Section -->
+  <section class="px-6 py-16" id="contact">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-semibold text-accent mb-6">Contact</h3>
+      <p class="text-lg mb-2">📧 UNK Email: <a href="mailto:rahimovd@lopers.unk.edu" class="text-accent hover:underline">rahimovd@lopers.unk.edu</a></p>
+      <p class="text-lg mb-2">📩 Personal Email: <a href="mailto:drahimov04@gmail.com" class="text-accent hover:underline">drahimov04@gmail.com</a></p>
+      <p class="text-lg">🔗 LinkedIn: <a href="https://www.linkedin.com/in/daler-rahimov-002970264/" class="text-accent hover:underline">linkedin.com/in/daler-rahimov</a></p>
     </div>
   </section>
 
-  <footer class="text-center text-sm text-gray-500 py-6">
+  <footer class="text-center text-sm text-gray-500 py-8">
     © 2025 Daler Rahimov. All rights reserved.
   </footer>
+
 </body>
 </html>
 
