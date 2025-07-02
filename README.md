@@ -3,7 +3,7 @@
 This is the source code for my personal portfolio website. It highlights my professional background, technical skills, and selected projects in **AI, data analytics, and web development**.
 
 ## 🌐 Live Site
-Visit: [https://your-portfolio-url.com](https://your-portfolio-url.com)
+Visit: [https://dalerrahimov0.github.io/Portfolio/](https://dalerrahimov0.github.io/Portfolio/)
 
 ## 🧠 About Me
 Hi! I'm Daler Rahimov, a Data Analyst & AI Specialist with a B.S. in Information Technology and a minor in Data Analytics. I have a strong passion for using intelligent systems to solve real-world problems.
@@ -33,7 +33,7 @@ This site uses [FormSubmit.io](https://formsubmit.io) for the contact form. Subm
 
 ## 📸 Thumbnail
 
-![Portfolio Screenshot](./profile.jpg)
+![Portfolio Screenshot](./thumbnail.PNG)
 
 
 ## 🔐 Disclaimer
