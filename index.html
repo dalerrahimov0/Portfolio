@@ -277,48 +277,104 @@
       </div>
     </div>
 
-    <!-- Project 2 -->
-    <div class="project-card bg-slate-800/50 rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/20">
-      <div class="p-6">
-        <h3 class="text-xl font-bold text-white mb-4">Medical Billing Error Predictor for Breast Cancer Patients</h3>
-        <p class="text-gray-400 mb-4">Predictive analytics tool for healthcare billing accuracy</p>
+    <!-- Project 2: Medical Billing Error Predictor -->
+<div class="project-card bg-slate-800/50 rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/20">
+  <div class="p-6">
+    <div class="flex justify-between items-start mb-4">
+      <h3 class="text-xl font-bold text-white">Medical Billing Error Predictor for Breast Cancer Patients</h3>
+    </div>
+    <p class="text-gray-400 mb-4">Predictive analytics tool for healthcare billing accuracy</p>
 
-        <div class="flex flex-wrap gap-2 mb-6">
-          <span class="tech-tag text-xs px-2 py-1 rounded">Python</span>
-          <span class="tech-tag text-xs px-2 py-1 rounded">Excel</span>
-          <span class="tech-tag text-xs px-2 py-1 rounded">Data Visualization</span>
-          <span class="tech-tag text-xs px-2 py-1 rounded">Probability Modeling</span>
-          <span class="tech-tag text-xs px-2 py-1 rounded">IRT</span>
-        </div>
+    <!-- Tech Tags -->
+    <div class="flex flex-wrap gap-2 mb-6">
+      <span class="tech-tag text-xs px-2 py-1 rounded">Python</span>
+      <span class="tech-tag text-xs px-2 py-1 rounded">Excel</span>
+      <span class="tech-tag text-xs px-2 py-1 rounded">Data Visualization</span>
+      <span class="tech-tag text-xs px-2 py-1 rounded">Probability Modeling</span>
+      <span class="tech-tag text-xs px-2 py-1 rounded">IRT</span>
+    </div>
 
-        <p class="text-gray-300 mb-4">
-          This predictive analytics tool was developed to estimate the likelihood of medical billing errors in breast cancer treatment workflows.
-          The hypothesis: The more procedures a patient undergoes, the higher the chance of billing errors. Our model analyzes procedure counts by
-          stage and predicts error probabilities using custom-constructed datasets and statistical methods.
-        </p>
+    <!-- Project Description -->
+    <p class="text-gray-300 mb-4">
+      Built a modeling pipeline to estimate the likelihood of medical billing errors along a care pathway.
+      Combined Item Response Theory (IRT) and binomial probability to quantify how error risk compounds with
+      procedure count, then validated against national reporting trends and incidence context.
+    </p>
 
-        <div class="mb-6">
-          <h4 class="text-cyan-400 font-medium mb-2">Features:</h4>
-          <ul class="list-disc list-inside text-gray-400 space-y-1">
-            <li>Simulated stage-based data due to HIPAA restrictions</li>
-            <li>Binomial models and Cronbach's Alpha for statistical validation</li>
-            <li>Data visualization and decision-making thresholds</li>
-          </ul>
-        </div>
+    <!-- Features -->
+    <div class="mb-6">
+      <h4 class="text-cyan-400 font-medium mb-2">Features:</h4>
+      <ul class="list-disc list-inside text-gray-400 space-y-1">
+        <li>IRT-based risk scoring per procedure</li>
+        <li>Binomial model for cumulative error likelihood</li>
+        <li>External benchmarking with U.S. report data</li>
+        <li>Clear visuals for non-technical stakeholders</li>
+      </ul>
+    </div>
 
-        <div class="mb-6">
-          <h4 class="text-cyan-400 font-medium mb-2">Result:</h4>
-          <p class="text-gray-400">Found a significant increase in billing error probability when procedure count surpassed critical levels.</p>
-        </div>
+    <!-- Result / Impact -->
+    <div class="mb-6">
+      <h4 class="text-cyan-400 font-medium mb-2">Result:</h4>
+      <p class="text-gray-400">
+        Demonstrated that even modest per-procedure error rates lead to near-certain errors over many procedures,
+        motivating targeted checks and audit triggers in high-volume workflows.
+      </p>
+    </div>
 
-        <div class="text-gray-400 text-sm italic mt-4">
-          Note: Due to the inclusion of sensitive medical data and group collaboration, full project files are not publicly available.
-          A sanitized version or demo can be provided upon request.
-        </div>
+    <!-- Gallery (compact thumbnails + captions; click opens lightbox) -->
+    <div class="mt-8">
+      <h4 class="text-cyan-400 font-medium mb-4">Screenshots (click to enlarge):</h4>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <!-- Slide 1 -->
+        <figure class="text-center">
+          <button type="button" data-full="images/medbilling-irt.png" class="focus:outline-none">
+            <img src="images/medbilling-irt.png"
+                 alt="IRT model of billing error risk"
+                 class="mx-auto h-24 md:h-28 object-contain rounded">
+          </button>
+        <figcaption class="text-gray-300 text-sm mt-2">
+            IRT model — 1 in 44 chance per procedure; risk compounds with more procedures.
+          </figcaption>
+        </figure>
+
+        <!-- Slide 2 -->
+        <figure class="text-center">
+          <button type="button" data-full="images/medbilling-us-trend.png" class="focus:outline-none">
+            <img src="images/medbilling-us-trend.png"
+                 alt="U.S. billing error reports by year and provider type"
+                 class="mx-auto h-24 md:h-28 object-contain rounded">
+          </button>
+          <figcaption class="text-gray-300 text-sm mt-2">
+            U.S. reports (2014–2021) by provider type—trends & error concentration.
+          </figcaption>
+        </figure>
+
+        <!-- Slide 3 -->
+        <figure class="text-center">
+          <button type="button" data-full="images/medbilling-bc-incidence.png" class="focus:outline-none">
+            <img src="images/medbilling-bc-incidence.png"
+                 alt="Breast cancer incidence and mortality context"
+                 class="mx-auto h-24 md:h-28 object-contain rounded">
+          </button>
+          <figcaption class="text-gray-300 text-sm mt-2">
+            Context: ~297K new cases & 43K deaths (2023) → high-impact need for accuracy.
+          </figcaption>
+        </figure>
+
+        <!-- Slide 4 -->
+        <figure class="text-center">
+          <button type="button" data-full="images/medbilling-binomial.png" class="focus:outline-none">
+            <img src="images/medbilling-binomial.png"
+                 alt="Binomial model showing cumulative risk"
+                 class="mx-auto h-24 md:h-28 object-contain rounded">
+          </button>
+          <figcaption class="text-gray-300 text-sm mt-2">
+            Binomial model — across 100 procedures, zero-error outcome is nearly impossible.
+          </figcaption>
+        </figure>
       </div>
     </div>
-  </div>
-</section>
 
 <!-- Lightbox (ONE TIME only) -->
 <div id="lightbox" class="fixed inset-0 bg-black/80 hidden z-50 items-center justify-center p-4">
