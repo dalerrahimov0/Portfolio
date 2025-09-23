@@ -321,7 +321,7 @@
       </p>
     </div>
 
-    <!-- Gallery (compact thumbnails + captions; click opens lightbox) -->
+    <!-- Gallery (thumbnails + captions; click opens lightbox) -->
     <div class="mt-8">
       <h4 class="text-cyan-400 font-medium mb-4">Screenshots (click to enlarge):</h4>
 
@@ -329,11 +329,11 @@
         <!-- Slide 1 -->
         <figure class="text-center">
           <button type="button" data-full="images/medbilling-irt.png" class="focus:outline-none">
-            <img src="images/medbilling-irt.png"
+            <img loading="lazy" src="images/medbilling-irt.png"
                  alt="IRT model of billing error risk"
                  class="mx-auto h-24 md:h-28 object-contain rounded">
           </button>
-        <figcaption class="text-gray-300 text-sm mt-2">
+          <figcaption class="text-gray-300 text-sm mt-2">
             IRT model — 1 in 44 chance per procedure; risk compounds with more procedures.
           </figcaption>
         </figure>
@@ -341,7 +341,7 @@
         <!-- Slide 2 -->
         <figure class="text-center">
           <button type="button" data-full="images/medbilling-us-trend.png" class="focus:outline-none">
-            <img src="images/medbilling-us-trend.png"
+            <img loading="lazy" src="images/medbilling-us-trend.png"
                  alt="U.S. billing error reports by year and provider type"
                  class="mx-auto h-24 md:h-28 object-contain rounded">
           </button>
@@ -353,7 +353,7 @@
         <!-- Slide 3 -->
         <figure class="text-center">
           <button type="button" data-full="images/medbilling-bc-incidence.png" class="focus:outline-none">
-            <img src="images/medbilling-bc-incidence.png"
+            <img loading="lazy" src="images/medbilling-bc-incidence.png"
                  alt="Breast cancer incidence and mortality context"
                  class="mx-auto h-24 md:h-28 object-contain rounded">
           </button>
@@ -365,7 +365,7 @@
         <!-- Slide 4 -->
         <figure class="text-center">
           <button type="button" data-full="images/medbilling-binomial.png" class="focus:outline-none">
-            <img src="images/medbilling-binomial.png"
+            <img loading="lazy" src="images/medbilling-binomial.png"
                  alt="Binomial model showing cumulative risk"
                  class="mx-auto h-24 md:h-28 object-contain rounded">
           </button>
@@ -375,8 +375,11 @@
         </figure>
       </div>
     </div>
+  </div>
+</div>
+</section>
 
-<!-- Lightbox (ONE TIME only) -->
+<!-- Lightbox (one per page) -->
 <div id="lightbox" class="fixed inset-0 bg-black/80 hidden z-50 items-center justify-center p-4">
   <button id="lightbox-close" class="absolute top-4 right-4 rounded-full bg-white/10 hover:bg-white/20 p-2 text-white"
           aria-label="Close preview">✕</button>
