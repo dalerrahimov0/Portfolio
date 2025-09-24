@@ -55,8 +55,8 @@ This repo is primarily for demonstration. Please do **not reuse personal assets 
 ## 📫 Contact
 
 - 📧 Email: rahimovd@lopers.unk.edu  
-- 🌍 LinkedIn: [linkedin.com/in/dalerr](https://www.linkedin.com/in/dalerr)
-- 🧠 GitHub: [github.com/dalerr](https://github.com/dalerr)
+- 🌍 LinkedIn: [(https://www.linkedin.com/in/daler-rahimov/)]
+- 🧠 GitHub: [https://github.com/dalerrahimov0)
 
 ---
 
